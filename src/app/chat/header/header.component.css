@@ -1,0 +1,15 @@
+.spotim-header {
+  text-align: center;
+  background-color: #0082DD;
+  padding: 20px;
+  color: white;
+}
+
+.spotim-title {
+  font-size: 1.5em;
+}
+
+img.logo {
+  width: 80px;
+  height: auto;
+}

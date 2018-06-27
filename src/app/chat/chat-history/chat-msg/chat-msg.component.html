@@ -1,0 +1,9 @@
+<div class="row msg-box" [class.my-msg]="message.isMyMessage">
+  <div class="col-auto">
+    <img class="msg-avatar" [src]="message.avatar">
+  </div>
+  <div class="col msg-text">
+    <span class="font-weight-bold"> {{message.username}}</span>:
+    <span class="msg-content">{{message.text}}</span>
+  </div>
+</div>

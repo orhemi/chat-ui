@@ -1,0 +1,24 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div class="row">
+    <div class="col-auto px-2 my-auto">
+      <img class="user-img" [src]="user.avatar">
+    </div>
+    <div class="col">
+      <div class="row mb-1">
+        <div class="col">
+          <input class="form-control" placeholder="Username" required
+                 name="username" [(ngModel)]="user.username" (change)="onChangeUsername()"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <textarea class="form-control" rows="2" placeholder="Message" required
+                  name="msg" [(ngModel)]="msg"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto my-auto">
+      <button type="submit" [disabled]="!form.valid" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>

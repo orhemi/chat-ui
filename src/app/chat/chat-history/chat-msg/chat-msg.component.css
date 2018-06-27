@@ -1,0 +1,19 @@
+.msg-box {
+  padding: 10px;
+}
+
+.my-msg {
+  background-color: #e4fbff;
+}
+
+.msg-avatar {
+  width: 30px;
+}
+
+.msg-text {
+  line-height: 30px;
+}
+
+.msg-content {
+  white-space: pre-line;
+}
